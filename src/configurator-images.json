@@ -1,0 +1,40 @@
+{
+  "shapes": {
+    "3": "assets/configurator/shapes-3.png",
+    "2": "assets/configurator/shapes-2.png",
+    "1": "assets/configurator/shapes-1.png",
+    "4": "assets/configurator/shapes-4.png",
+    "7": "assets/configurator/shapes-7.png",
+    "6": "assets/configurator/shapes-6.png",
+    "5": "assets/configurator/shapes-5.png"
+  },
+  "materials": {
+    "1": "assets/configurator/materials-1.png",
+    "2": "assets/configurator/materials-2.png",
+    "3": "assets/configurator/materials-3.png",
+    "5": "assets/configurator/materials-5.png",
+    "4": "assets/configurator/materials-4.png",
+    "6": "assets/configurator/materials-6.png",
+    "7": "assets/configurator/materials-7.png",
+    "8": "assets/configurator/materials-8.png"
+  },
+  "decorations": [
+    "assets/configurator/decoration-1.png",
+    "assets/configurator/decoration-2.png",
+    "assets/configurator/decoration-3.png",
+    "assets/configurator/decoration-4.png",
+    "assets/configurator/decoration-5.png",
+    "assets/configurator/decoration-6.png",
+    "assets/configurator/decoration-7.png",
+    "assets/configurator/decoration-8.png",
+    "assets/configurator/decoration-9.png",
+    "assets/configurator/decoration-10.png",
+    "assets/configurator/decoration-11.png",
+    "assets/configurator/decoration-12.png",
+    "assets/configurator/decoration-13.png",
+    "assets/configurator/decoration-14.png",
+    "assets/configurator/decoration-15.png",
+    "assets/configurator/decoration-16.png",
+    "assets/configurator/decoration-17.png"
+  ]
+}
