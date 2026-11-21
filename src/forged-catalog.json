@@ -1,0 +1,516 @@
+{
+  "source": "оградки.pdf",
+  "sourceSha256": "657c185151ea80cecddea00a470937d258fa28b099c8ab49f90b6985ce77833a",
+  "items": [
+    {
+      "id": "victoria",
+      "category": "fences",
+      "name": "Оградка «Виктория»",
+      "image": "assets/forged/page-1-1.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "400 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "25 × 25 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 1
+    },
+    {
+      "id": "square",
+      "category": "fences",
+      "name": "Оградка «Квадрат в квадрате»",
+      "image": "assets/forged/page-1-2.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "400 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "25 × 25 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 1
+    },
+    {
+      "id": "wave",
+      "category": "fences",
+      "name": "Оградка «Волна»",
+      "image": "assets/forged/page-1-3.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "550 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Нижний пояс усиления",
+          "value": "25 × 25 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "30 × 30 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 1
+    },
+    {
+      "id": "victoria-top",
+      "category": "fences",
+      "name": "Оградка «Виктория с навершием»",
+      "image": "assets/forged/page-2-1.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "400 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "25 × 25 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 2
+    },
+    {
+      "id": "lily",
+      "category": "fences",
+      "name": "Оградка «Лилия»",
+      "image": "assets/forged/page-2-2.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "400 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "25 × 25 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 2
+    },
+    {
+      "id": "arc",
+      "category": "fences",
+      "name": "Оградка «Дуга»",
+      "image": "assets/forged/page-2-3.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "400 мм"
+        },
+        {
+          "label": "Дуга",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "20 × 20 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 2
+    },
+    {
+      "id": "corner-1",
+      "category": "fences",
+      "name": "Угол № 1",
+      "image": "assets/forged/page-3-1.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "530 мм"
+        },
+        {
+          "label": "Длина",
+          "value": "700 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Столбик",
+          "value": "25 × 25 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 3
+    },
+    {
+      "id": "corner-2",
+      "category": "fences",
+      "name": "Угол № 2",
+      "image": "assets/forged/page-3-2.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "580 мм"
+        },
+        {
+          "label": "Длина",
+          "value": "800 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Столбик",
+          "value": "30 × 30 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 3
+    },
+    {
+      "id": "corner-3",
+      "category": "fences",
+      "name": "Угол № 3",
+      "image": "assets/forged/page-3-3.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "600 мм"
+        },
+        {
+          "label": "Длина",
+          "value": "850 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Столбик",
+          "value": "40 × 40 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 3
+    },
+    {
+      "id": "heart",
+      "category": "fences",
+      "name": "Оградка «Сердце»",
+      "image": "assets/forged/page-4-1.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "500 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Пояса",
+          "value": "20 × 20 мм"
+        },
+        {
+          "label": "Ножка",
+          "value": "25 × 25 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 4
+    },
+    {
+      "id": "cross-1",
+      "category": "crosses",
+      "name": "Крест № 1",
+      "image": "assets/forged/page-4-2.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "1500 мм"
+        },
+        {
+          "label": "Основание",
+          "value": "25 × 50 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "0,6 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 4
+    },
+    {
+      "id": "cross-b1",
+      "category": "crosses",
+      "name": "Крест «Б1»",
+      "image": "assets/forged/page-4-3.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "1500 мм"
+        },
+        {
+          "label": "Основание",
+          "value": "20 × 40 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 4
+    },
+    {
+      "id": "cross-b2",
+      "category": "crosses",
+      "name": "Крест «Б2»",
+      "image": "assets/forged/page-5-1.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "1500 мм"
+        },
+        {
+          "label": "Основание",
+          "value": "25 × 25 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 5
+    },
+    {
+      "id": "cross-m1",
+      "category": "crosses",
+      "name": "Крест «М1»",
+      "image": "assets/forged/page-5-2.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "1000 мм"
+        },
+        {
+          "label": "Основание",
+          "value": "25 × 25 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 5
+    },
+    {
+      "id": "cross-m2",
+      "category": "crosses",
+      "name": "Крест «М2»",
+      "image": "assets/forged/page-5-3.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "1000 мм"
+        },
+        {
+          "label": "Основание",
+          "value": "25 × 25 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "15 × 15 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 5
+    },
+    {
+      "id": "table-forged",
+      "category": "furniture",
+      "name": "Стол «Кованый»",
+      "image": "assets/forged/page-6-1.jpeg",
+      "specs": [
+        {
+          "label": "Размер (В × Ш × Д)",
+          "value": "850 × 500 × 600 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "20 × 20 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 6
+    },
+    {
+      "id": "table-pattern",
+      "category": "furniture",
+      "name": "Стол «Узор»",
+      "image": "assets/forged/page-6-2.jpeg",
+      "specs": [
+        {
+          "label": "Размер (В × Ш × Д)",
+          "value": "800 × 500 × 500 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "20 × 20 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 6,
+      "imageNote": "На фотографии показаны стол и лавка «Узор». Каждое изделие рассчитывается отдельно."
+    },
+    {
+      "id": "bench-pattern",
+      "category": "furniture",
+      "name": "Лавка «Узор»",
+      "image": "assets/forged/page-6-2.jpeg",
+      "specs": [
+        {
+          "label": "Размер (В × Ш × Д)",
+          "value": "480 × 200 × 1000 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 6,
+      "imageNote": "На фотографии показаны стол и лавка «Узор». Каждое изделие рассчитывается отдельно."
+    },
+    {
+      "id": "bench-forged",
+      "category": "furniture",
+      "name": "Лавка «Кованая»",
+      "image": "assets/forged/page-6-3.jpeg",
+      "specs": [
+        {
+          "label": "Размер (В × Ш × Д)",
+          "value": "500 × 260 × 1000 мм"
+        },
+        {
+          "label": "Рисунок",
+          "value": "20 × 20 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 6
+    },
+    {
+      "id": "bench-back",
+      "category": "furniture",
+      "name": "Лавка «Кованая» со спинкой",
+      "image": "assets/forged/page-7-1.jpeg",
+      "specs": [
+        {
+          "label": "Размер (В × Ш × Д)",
+          "value": "500 × 260 × 1000 мм"
+        },
+        {
+          "label": "Высота со спинкой",
+          "value": "1085 мм"
+        },
+        {
+          "label": "Рисунок спинки",
+          "value": "15 × 15 мм"
+        },
+        {
+          "label": "Рисунок ножки",
+          "value": "20 × 20 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 7
+    },
+    {
+      "id": "vase-1",
+      "category": "vases",
+      "name": "Ритуальная ваза № 1",
+      "image": "assets/forged/page-7-2.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "350 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 7
+    },
+    {
+      "id": "vase-2",
+      "category": "vases",
+      "name": "Ритуальная ваза № 2",
+      "image": "assets/forged/page-7-3.jpeg",
+      "specs": [
+        {
+          "label": "Высота",
+          "value": "350 мм"
+        }
+      ],
+      "price": null,
+      "sourcePage": 7
+    }
+  ]
+}
