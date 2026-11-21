@@ -1,0 +1,410 @@
+[
+  {
+    "id": "single-straight",
+    "name": "Прямые одинарные памятники",
+    "audience": "single",
+    "form": "straight",
+    "portraits": 1,
+    "variants": [
+      {
+        "id": "single-straight-600x400x50",
+        "dimensions": [
+          600,
+          400,
+          50
+        ],
+        "price": 18000
+      },
+      {
+        "id": "single-straight-800x450x50",
+        "dimensions": [
+          800,
+          450,
+          50
+        ],
+        "price": 35000
+      },
+      {
+        "id": "single-straight-1000x500x50",
+        "dimensions": [
+          1000,
+          500,
+          50
+        ],
+        "price": 40000
+      },
+      {
+        "id": "single-straight-1100x600x60",
+        "dimensions": [
+          1100,
+          600,
+          60
+        ],
+        "price": 50000
+      },
+      {
+        "id": "single-straight-1200x600x80",
+        "dimensions": [
+          1200,
+          600,
+          80
+        ],
+        "price": 65000
+      },
+      {
+        "id": "single-straight-1200x700x80",
+        "dimensions": [
+          1200,
+          700,
+          80
+        ],
+        "price": 70000
+      },
+      {
+        "id": "single-straight-1400x600x80",
+        "dimensions": [
+          1400,
+          600,
+          80
+        ],
+        "price": 75000
+      },
+      {
+        "id": "single-straight-1500x700x80",
+        "dimensions": [
+          1500,
+          700,
+          80
+        ],
+        "price": 110000
+      },
+      {
+        "id": "single-straight-1600x700x80",
+        "dimensions": [
+          1600,
+          700,
+          80
+        ],
+        "price": 180000
+      },
+      {
+        "id": "single-straight-1800x900x120",
+        "dimensions": [
+          1800,
+          900,
+          120
+        ],
+        "price": 250000
+      }
+    ],
+    "price": 18000,
+    "image": "assets/catalog-generated/single-straight.png"
+  },
+  {
+    "id": "single-shaped",
+    "name": "Фигурные одинарные памятники",
+    "audience": "single",
+    "form": "shaped",
+    "portraits": 1,
+    "variants": [
+      {
+        "id": "single-shaped-800x450x50",
+        "dimensions": [
+          800,
+          450,
+          50
+        ],
+        "price": 39000
+      },
+      {
+        "id": "single-shaped-1000x500x50",
+        "dimensions": [
+          1000,
+          500,
+          50
+        ],
+        "price": 44000
+      },
+      {
+        "id": "single-shaped-1100x600x60",
+        "dimensions": [
+          1100,
+          600,
+          60
+        ],
+        "price": 54000
+      },
+      {
+        "id": "single-shaped-1200x600x80",
+        "dimensions": [
+          1200,
+          600,
+          80
+        ],
+        "price": 72000
+      },
+      {
+        "id": "single-shaped-1200x700x80",
+        "dimensions": [
+          1200,
+          700,
+          80
+        ],
+        "price": 77000
+      },
+      {
+        "id": "single-shaped-1400x600x80",
+        "dimensions": [
+          1400,
+          600,
+          80
+        ],
+        "price": 80000
+      },
+      {
+        "id": "single-shaped-1500x700x80",
+        "dimensions": [
+          1500,
+          700,
+          80
+        ],
+        "price": 120000
+      },
+      {
+        "id": "single-shaped-1600x700x80",
+        "dimensions": [
+          1600,
+          700,
+          80
+        ],
+        "price": null
+      },
+      {
+        "id": "single-shaped-1800x900x120",
+        "dimensions": [
+          1800,
+          900,
+          120
+        ],
+        "price": null
+      }
+    ],
+    "price": 39000,
+    "image": "assets/catalog-generated/single-shaped.png"
+  },
+  {
+    "id": "single-milled",
+    "name": "Фрезерные одинарные памятники",
+    "audience": "single",
+    "form": "milled",
+    "portraits": 1,
+    "variants": [
+      {
+        "id": "single-milled-800x450x50",
+        "dimensions": [
+          800,
+          450,
+          50
+        ],
+        "price": 47000
+      },
+      {
+        "id": "single-milled-1000x500x50",
+        "dimensions": [
+          1000,
+          500,
+          50
+        ],
+        "price": 52000
+      },
+      {
+        "id": "single-milled-1100x600x60",
+        "dimensions": [
+          1100,
+          600,
+          60
+        ],
+        "price": 65000
+      },
+      {
+        "id": "single-milled-1200x600x80",
+        "dimensions": [
+          1200,
+          600,
+          80
+        ],
+        "price": 85000
+      },
+      {
+        "id": "single-milled-1200x700x80",
+        "dimensions": [
+          1200,
+          700,
+          80
+        ],
+        "price": 90000
+      },
+      {
+        "id": "single-milled-1400x600x80",
+        "dimensions": [
+          1400,
+          600,
+          80
+        ],
+        "price": 100000
+      },
+      {
+        "id": "single-milled-1500x700x80",
+        "dimensions": [
+          1500,
+          700,
+          80
+        ],
+        "price": 150000
+      }
+    ],
+    "price": 47000,
+    "image": "assets/catalog-generated/single-milled.png"
+  },
+  {
+    "id": "family-straight",
+    "name": "Прямые семейные памятники",
+    "audience": "family",
+    "form": "straight",
+    "portraits": 2,
+    "variants": [
+      {
+        "id": "family-straight-900x700x50",
+        "dimensions": [
+          900,
+          700,
+          50
+        ],
+        "price": 44000
+      },
+      {
+        "id": "family-straight-1100x600x60",
+        "dimensions": [
+          1100,
+          600,
+          60
+        ],
+        "price": 54000
+      },
+      {
+        "id": "family-straight-1200x700x80",
+        "dimensions": [
+          1200,
+          700,
+          80
+        ],
+        "price": 74000
+      },
+      {
+        "id": "family-straight-1000x900x80",
+        "dimensions": [
+          1000,
+          900,
+          80
+        ],
+        "price": 82000
+      }
+    ],
+    "price": 44000,
+    "image": "assets/catalog-generated/family-straight.png"
+  },
+  {
+    "id": "family-shaped",
+    "name": "Фигурные семейные памятники",
+    "audience": "family",
+    "form": "shaped",
+    "portraits": 2,
+    "variants": [
+      {
+        "id": "family-shaped-900x700x50",
+        "dimensions": [
+          900,
+          700,
+          50
+        ],
+        "price": 49000
+      },
+      {
+        "id": "family-shaped-1100x600x60",
+        "dimensions": [
+          1100,
+          600,
+          60
+        ],
+        "price": 59000
+      },
+      {
+        "id": "family-shaped-1200x700x80",
+        "dimensions": [
+          1200,
+          700,
+          80
+        ],
+        "price": 78000
+      },
+      {
+        "id": "family-shaped-1000x900x80",
+        "dimensions": [
+          1000,
+          900,
+          80
+        ],
+        "price": 88000
+      }
+    ],
+    "price": 49000,
+    "image": "assets/catalog-generated/family-shaped.png"
+  },
+  {
+    "id": "family-milled",
+    "name": "Фрезерные семейные памятники",
+    "audience": "family",
+    "form": "milled",
+    "portraits": 2,
+    "variants": [
+      {
+        "id": "family-milled-900x700x50",
+        "dimensions": [
+          900,
+          700,
+          50
+        ],
+        "price": 60000
+      },
+      {
+        "id": "family-milled-1100x600x60",
+        "dimensions": [
+          1100,
+          600,
+          60
+        ],
+        "price": 69000
+      },
+      {
+        "id": "family-milled-1200x700x80",
+        "dimensions": [
+          1200,
+          700,
+          80
+        ],
+        "price": 94000
+      },
+      {
+        "id": "family-milled-1000x900x80",
+        "dimensions": [
+          1000,
+          900,
+          80
+        ],
+        "price": 100000
+      }
+    ],
+    "price": 60000,
+    "image": "assets/catalog-generated/family-milled.png"
+  }
+]

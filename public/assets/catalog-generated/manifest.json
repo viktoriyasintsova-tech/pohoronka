@@ -1,0 +1,15 @@
+{
+  "generator": "Built-in image_gen tool",
+  "usage": "One conceptual illustration for each of six catalog series; sizes are variants within each series. Not photos of delivered products.",
+  "promptStyle": "Square studio product render, seamless warm ivory #F3F1ED background, front three-quarter camera slightly from right, soft upper-left light, centered entire product, black polished granite, no text or portraits or decorations.",
+  "subjects": {
+    "single-straight": "single upright blank rectangular black granite stele with flat top and rectangular plinth",
+    "single-shaped": "single upright black granite stele with asymmetric wave top",
+    "single-milled": "single upright black granite stele with recessed milled border and rounded upper corners",
+    "family-straight": "wide horizontal blank rectangular black granite family stele",
+    "family-shaped": "wide horizontal blank black granite family stele with curved crown",
+    "family-milled": "wide horizontal blank black granite family stele with recessed milled border"
+  },
+  "priceSource": "User-supplied ПРАЙС актуальный.jpeg (headed April 2026); replaces old Excel wholesale amounts for matching monument types and sizes.",
+  "legacyModels": "Original Excel model names, section headings and dimensions retained in model-directory.json without outdated numeric prices."
+}
