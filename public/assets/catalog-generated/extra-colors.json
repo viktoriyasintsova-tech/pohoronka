@@ -1,0 +1,65 @@
+{
+  "generator": "Built-in image_gen",
+  "entries": [
+    {
+      "file": "public/assets/catalog-generated/form-arc3-gray.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to medium neutral gray polished granite with fine natural dark mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc3-brown.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to warm medium brown polished granite with fine natural black and brown mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc3-red.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to muted red polished granite with fine natural red and black mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc4-gray.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to medium neutral gray polished granite with fine natural dark mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc4-brown.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to warm medium brown polished granite with fine natural black and brown mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc4-red.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to muted red polished granite with fine natural red and black mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-mirror-gray.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to medium neutral gray polished granite with fine natural dark mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-mirror-brown.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to warm medium brown polished granite with fine natural black and brown mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-mirror-red.png",
+      "prompt": "Use case: precise-object-edit. Change ONLY the stone color of ALL parts of the attached memorial assembly, including pillars, central stele if present, arch, crown and plinth, to muted red polished granite with fine natural red and black mineral speckles. Preserve EXACT geometry, proportions, silhouette, empty openings, camera orientation, ivory seamless background, crop, shadows and lighting. The same premium studio catalog image in a different stone color. Do not add text, inscription, portrait, ornaments or props."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc5-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached memorial product illustration: change ONLY the material color of ALL stone components including pillars, crown, central stele when present and base to medium neutral gray polished granite with fine natural mineral speckles. Keep EXACT shapes, proportions, openings, decorations already in the geometry, camera, image layout, ivory studio background and lighting. No new elements, no portraits or writing, no labels or watermark. Consistent premium memorial catalog render."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc5-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached memorial product illustration: change ONLY the material color of ALL stone components including pillars, crown, central stele when present and base to warm brown polished granite with natural dark mineral flecks. Keep EXACT shapes, proportions, openings, decorations already in the geometry, camera, image layout, ivory studio background and lighting. No new elements, no portraits or writing, no labels or watermark. Consistent premium memorial catalog render."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc5-red.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached memorial product illustration: change ONLY the material color of ALL stone components including pillars, crown, central stele when present and base to muted red polished granite with fine natural dark mineral flecks. Keep EXACT shapes, proportions, openings, decorations already in the geometry, camera, image layout, ivory studio background and lighting. No new elements, no portraits or writing, no labels or watermark. Consistent premium memorial catalog render."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc7-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached memorial product illustration: change ONLY the material color of ALL stone components including pillars, crown, central stele when present and base to medium neutral gray polished granite with fine natural mineral speckles. Keep EXACT shapes, proportions, openings, decorations already in the geometry, camera, image layout, ivory studio background and lighting. No new elements, no portraits or writing, no labels or watermark. Consistent premium memorial catalog render."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc7-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached memorial product illustration: change ONLY the material color of ALL stone components including pillars, crown, central stele when present and base to warm brown polished granite with natural dark mineral flecks. Keep EXACT shapes, proportions, openings, decorations already in the geometry, camera, image layout, ivory studio background and lighting. No new elements, no portraits or writing, no labels or watermark. Consistent premium memorial catalog render."
+    },
+    {
+      "file": "public/assets/catalog-generated/form-arc7-red.png",
+      "prompt": "Use case: precise-object-edit. Edit the attached memorial product illustration: change ONLY the material color of ALL stone components including pillars, crown, central stele when present and base to muted red polished granite with fine natural dark mineral flecks. Keep EXACT shapes, proportions, openings, decorations already in the geometry, camera, image layout, ivory studio background and lighting. No new elements, no portraits or writing, no labels or watermark. Consistent premium memorial catalog render."
+    }
+  ]
+}

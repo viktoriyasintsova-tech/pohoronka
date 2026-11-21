@@ -1,0 +1,77 @@
+{
+  "generator": "Built-in image_gen; edits of project black catalog images",
+  "entries": [
+    {
+      "path": "public/assets/catalog-generated/single-straight-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to medium neutral gray polished granite, fine dark and light mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-straight-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to warm medium brown polished granite, fine natural brown and black mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-straight-red.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to muted red granite, natural red and dark fine mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-shaped-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to medium neutral gray polished granite, fine dark and light mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-shaped-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to warm medium brown polished granite, fine natural brown and black mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-shaped-red.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to muted red granite, natural red and dark fine mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-milled-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to medium neutral gray polished granite, fine dark and light mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-milled-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to warm medium brown polished granite, fine natural brown and black mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/single-milled-red.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to muted red granite, natural red and dark fine mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-straight-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to medium neutral gray polished granite, fine dark and light mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-straight-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to warm medium brown polished granite, fine natural brown and black mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-straight-red.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to muted red granite, natural red and dark fine mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-shaped-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to medium neutral gray polished granite, fine dark and light mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-shaped-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to warm medium brown polished granite, fine natural brown and black mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-shaped-red.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to muted red granite, natural red and dark fine mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-milled-gray.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to medium neutral gray polished granite, fine dark and light mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-milled-brown.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to warm medium brown polished granite, fine natural brown and black mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    },
+    {
+      "path": "public/assets/catalog-generated/family-milled-red.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached memorial product render. Change ONLY the stone material color of BOTH the stele and its base to muted red granite, natural red and dark fine mineral speckles. Preserve the EXACT monument silhouette, dimensions, carved frame details, camera angle, framing, ivory studio background, light direction, ground shadow, polish and blank surface. Same object, same photograph composition, different stone color only. No writing, portraits, religious symbols, extra ornaments, text, props, or watermarks. Premium consistent catalog product illustration."
+    }
+  ]
+}
