@@ -20,7 +20,7 @@ export default forwardRef(function StonePreview({model,variant,material,config={
  const canvasRef=useRef(null),dialogRef=useRef(null),readyRef=useRef(false),savedOverflow=useRef(null);const [state,setState]=useState('loading'),[snapshot,setSnapshot]=useState('');
  const dimensionsKey=(variant?.dimensions||[]).join('x');
  const src=asset(variant?.previewImage||model.previewImage||variant?.image||model.image);
- useImperativeHandle(ref,()=>({download(){const canvas=canvasRef.current;if(!canvas||!readyRef.current)return false;const a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download='istok-'+model.id+'.png';a.click();return true}}),[model.id]);
+ useImperativeHandle(ref,()=>({enlarge(){if(!readyRef.current)return false;enlarge();return true},download(){const canvas=canvasRef.current;if(!canvas||!readyRef.current)return false;const a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download='istok-'+model.id+'.png';a.click();return true}}),[model.id]);
  useEffect(()=>{let cancelled=false;readyRef.current=false;setState('loading');
  async function paint(){try{
   const original=await loadImage(src);if(cancelled)return;
