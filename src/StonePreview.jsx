@@ -1,7 +1,7 @@
 import React,{forwardRef,useEffect,useImperativeHandle,useRef,useState} from 'react';
 import {asset} from './catalog-data';
 import Icon from './Icon';
-import {applyStoneTexture} from './stone-texture';
+import {renderStoneMaterial} from './stone-texture';
 const imageCache=new Map();
 function loadImage(src){
  if(!imageCache.has(src)){
@@ -37,17 +37,12 @@ export default forwardRef(function StonePreview({model,variant,material,config={
   }
   if(material){
    const image=await loadImage(asset(material.texture));if(cancelled)return;
-   const layer=document.createElement('canvas');layer.width=size;layer.height=size;
-   const t=layer.getContext('2d',{willReadFrequently:true});
-   t.imageSmoothingEnabled=true;t.imageSmoothingQuality='high';
-   // One continuous square stone surface across the object, without repeats.
-   t.drawImage(image,0,0,size,size);
-   const texture=t.getImageData(0,0,size,size).data;
-   t.clearRect(0,0,size,size);t.filter='blur(5px)';t.drawImage(surface,0,0);t.filter='none';
-   const shading=t.getImageData(0,0,size,size).data;
-   applyStoneTexture(d,texture,shading,{marble:model.stone==='Мрамор'});
+   c.putImageData(pixels,0,0);
+   renderStoneMaterial({surface,image,material,model,variant,placement:{x:(size-w)/2,y:(size-h)/2,w,h}});
+  }else{
+   c.putImageData(pixels,0,0);
   }
-  c.putImageData(pixels,0,0);ctx.fillStyle='#f3f1ed';ctx.fillRect(0,0,size,size);ctx.drawImage(surface,0,0);
+  ctx.fillStyle='#f3f1ed';ctx.fillRect(0,0,size,size);ctx.drawImage(surface,0,0);
   if(config.portrait){const photo=await loadImage(config.portrait);if(cancelled)return;const pw=config.triplex?170:150,ph=200,px=clamp(Number(config.portraitX)||50,10,90)/100*size,py=clamp(Number(config.portraitY)||36,10,85)/100*size;ctx.save();ctx.beginPath();if(config.triplex)ctx.rect(px-pw/2,py-ph/2,pw,ph);else ctx.ellipse(px,py,pw/2,ph/2,0,0,Math.PI*2);ctx.clip();const fill=Math.max(pw/photo.width,ph/photo.height);ctx.drawImage(photo,px-photo.width*fill/2,py-photo.height*fill/2,photo.width*fill,photo.height*fill);ctx.restore();if(config.triplex){ctx.strokeStyle='#d5d9d9';ctx.lineWidth=4;ctx.strokeRect(px-pw/2,py-ph/2,pw,ph);for(const sx of [-1,1])for(const sy of [-1,1]){ctx.beginPath();ctx.arc(px+sx*(pw/2-9),py+sy*(ph/2-9),3,0,Math.PI*2);ctx.fillStyle='#e2e2dd';ctx.fill()}}}
   const name=config.name?.trim(),dates=config.dates?.trim(),epitaph=config.epitaph?.trim();
   if(name||dates||epitaph){const x=clamp(Number(config.textX)||50,10,90)/100*size,y=clamp(Number(config.textY)||57,15,90)/100*size;const font=config.font==='serif'?'Georgia':'Arial',fontSize=clamp(Number(config.fontSize)||27,16,44);ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=config.textColor==='dark'?'#352b26':'#f6f3e9';ctx.shadowColor='rgba(0,0,0,.4)';ctx.shadowBlur=2;ctx.font=`${fontSize}px ${font}`;if(name)wrappedText(ctx,name,x,y,370,fontSize*1.35);ctx.font=`${fontSize*.7}px ${font}`;if(dates)wrappedText(ctx,dates,x,y+fontSize*2.5,370,fontSize);ctx.font=`italic ${fontSize*.65}px ${font}`;if(epitaph)wrappedText(ctx,epitaph,x,y+fontSize*4.1,370,fontSize*.95);}
