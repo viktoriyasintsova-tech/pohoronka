@@ -1,0 +1,26 @@
+{
+  "mode": "Built-in image_gen",
+  "venus": "Use case: product-mockup. Edit the reference memorial monument image into a premium ISTOK catalog product photograph. Preserve EXACTLY its asymmetric outline, sculptural beveled inset border, broad rounded rising wave top, curved tapered bottom and all the contour details; this is a precise product, not a new design. Show complete upright black polished granite stele installed on a simple matching low rectangular plinth, front view with very subtle visible right edge, centered on warm ivory seamless studio background #F3F1ED, soft upper left diffuse light and restrained contact shadow. No portrait, no engravings, no names, no symbols, no flowers, no watermark, no words. Clear sharp shape, quiet editorial product presentation consistent with a contemporary Russian memorial catalog. Square output, ample margin.",
+  "jobs": [
+    {
+      "key": "280bb4dd2177d127b45756e3ce86db0b",
+      "prompt": "Use case: precise-object-edit. Asset: ISTOK memorial catalog product illustration. Edit the reference into premium realistic studio product photography: this exact complete memorial plot with its THREE areas, steles, paving, low stone perimeter and built-in furniture. Preserve the architecture, count of sections and proportions. Remove every portrait and every inscription from the stone. Scene: warm ivory seamless studio #F3F1ED, soft upper-left diffuse light, subtle natural contact shadow, quiet restrained presentation. Complete object centered with generous margins in a square frame. Preserve the reference design exactly, only improve realism, lighting, background and finish. No extra objects. No people, portraits, inscriptions, decorative lettering, labels, logo or watermark. Stone should retain convincing polished specular highlights and exact construction.",
+      "reference": "/tmp/arkado-card-31.jpg"
+    },
+    {
+      "key": "6d9e1330cd4b059df87eac726cd278d9",
+      "prompt": "Use case: precise-object-edit. Asset: ISTOK memorial catalog product illustration. Edit the reference into premium realistic studio product photography: this exact black granite upright memorial with its long covered tomb slab, and its very distinctive inset red-granite long curved droplet shape on the slab. Preserve all exact silhouettes and placement. Scene: warm ivory seamless studio #F3F1ED, soft upper-left diffuse light, subtle natural contact shadow, quiet restrained presentation. Complete object centered with generous margins in a square frame. Preserve the reference design exactly, only improve realism, lighting, background and finish. No extra objects. No people, portraits, inscriptions, decorative lettering, labels, logo or watermark. Stone should retain convincing polished specular highlights and exact construction.",
+      "reference": "/tmp/arkado-card-45.jpg"
+    },
+    {
+      "key": "ee3a0f3ad80096e0055e676a2df902dc",
+      "prompt": "Use case: precise-object-edit. Asset: ISTOK memorial catalog product illustration. Edit the reference into premium realistic studio product photography: this exact sculptural chapel monument, with its columns, arched head opening, onion dome and Orthodox cross. Preserve the exact silhouette, architectural details and plinth; do not replace it with a different chapel. Scene: warm ivory seamless studio #F3F1ED, soft upper-left diffuse light, subtle natural contact shadow, quiet restrained presentation. Complete object centered with generous margins in a square frame. Preserve the reference design exactly, only improve realism, lighting, background and finish. No extra objects. No people, portraits, inscriptions, decorative lettering, labels, logo or watermark. Stone should retain convincing polished specular highlights and exact construction.",
+      "reference": "/tmp/arkado-card-75.jpg"
+    },
+    {
+      "key": "1e0763a012a8974adb56cdb81525287f",
+      "prompt": "Use case: precise-object-edit. Asset: ISTOK memorial catalog product illustration. Edit the reference into premium realistic studio product photography: this exact wide horizontal gray-blue marble memorial with a gentle shallow arched top, recessed inner edge, short pedestal and rectangular flowerbed. Preserve its outline and marble coloration. Scene: warm ivory seamless studio #F3F1ED, soft upper-left diffuse light, subtle natural contact shadow, quiet restrained presentation. Complete object centered with generous margins in a square frame. Preserve the reference design exactly, only improve realism, lighting, background and finish. No extra objects. No people, portraits, inscriptions, decorative lettering, labels, logo or watermark. Stone should retain convincing polished specular highlights and exact construction.",
+      "reference": "/tmp/arkado-card-100.jpg"
+    }
+  ]
+}

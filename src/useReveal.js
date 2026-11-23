@@ -1,6 +1,7 @@
 import {useEffect} from 'react';
-export default function useReveal(dependencies=[]){
+export default function useReveal(dependencies=[],enabled=true){
  useEffect(()=>{
+  if(!enabled)return;
   const preference=window.matchMedia('(prefers-reduced-motion: reduce)');
   if(preference.matches||!('IntersectionObserver' in window))return;
   const nodes=[...document.querySelectorAll('.section-heading, .services-grid>a, .catalog-card, .triplex-layout>div, .gallery-grid>button, .contact-layout>div, .contact-details>div')];
@@ -9,5 +10,5 @@ export default function useReveal(dependencies=[]){
   const finish=()=>{if(preference.matches){observer.disconnect();nodes.forEach(node=>node.classList.remove('reveal-pending','is-revealed'))}};
   preference.addEventListener('change',finish);
   return()=>{observer.disconnect();preference.removeEventListener('change',finish);nodes.forEach(node=>{node.classList.remove('reveal-pending','is-revealed');node.style.removeProperty('--reveal-delay')})};
- },dependencies);
+ },[...dependencies,enabled]);
 }
