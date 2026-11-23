@@ -1,0 +1,38 @@
+{
+  "generator": "image_gen",
+  "date": "2026-11-23",
+  "purpose": "Illustrative natural stone albedo textures, not photographs of actual slabs",
+  "monuments": {
+    "prompt": "Create a high resolution square material texture atlas for a stone configurator website. Exactly 3 columns by 3 rows of equal sized square texture panels, edge-to-edge with NO gaps, borders, captions, lettering or labels. Every panel is a photorealistic flat orthographic closeup of polished natural stone, uniform diffuse neutral daylight, calibrated sRGB color, rich mineral detail, completely flat lighting, no reflections, hotspots, vignettes, perspective or objects. Each panel is ONE continuous nonrepeating stone texture, suitable for mapping across an entire monument, not a collage of little tiles. Aim for 3072x3072 or higher.\nPrecise row-major panel order:\nRow1 col1 Shanxi Black: deep neutral near-black, very fine even microscopic charcoal grains, no blue tint and no streaky reflections.\nRow1 col2 Gabbro: charcoal black with fine visible gray granular crystals, subtly lighter and grainier than Shanxi.\nRow1 col3 Diamond Black: black with small distinct silver mineral specks, denser and more sparkly grain than gabbro but not glitter.\nRow2 col1 Tulunblack: very deep jet black, extremely fine sparse dark gray mineral grain, darkest of the four.\nRow2 col2 Tan Brown: clearly warm medium-dark COCOA BROWN and copper-brown feldspar crystals with black and smoky quartz inclusions; richly detailed recognizably BROWN, not black, not reddish orange.\nRow2 col3 Red granite: rich brick-red and burgundy feldspar grains interlocked with black and gray mineral crystals, unmistakably red.\nRow3 col1 Gray granite: light neutral gray, natural salt-and-pepper black and white crystals, fine/medium grain.\nRow3 col2 Cream marble: warm ivory cream body with delicate branching honey-beige and soft gold veins, subtle translucent natural mineral detail.\nRow3 col3 Gray marble: cool silver and slate blue-gray marble with organic flowing pale white and gray veins, moderate contrast.\nNo artificial grid INSIDE panels. Each panel uniform in overall brightness from edge to edge. This atlas will be split into individual assets.",
+    "order": [
+      "shanxi",
+      "gabbro",
+      "diamond",
+      "tulun",
+      "tan-brown",
+      "red",
+      "gray",
+      "marble-cream",
+      "marble-gray"
+    ],
+    "grid": [
+      3,
+      3
+    ],
+    "cropInset": 4
+  },
+  "paving": {
+    "prompt": "Generate a high-resolution square stone texture atlas, exactly TWO columns and TWO rows, four equally sized square panels filling the whole image with no gutters, borders, text, labels or objects. Photorealistic orthographic stone scan albedo textures for an architectural paving material selector. Detailed real interlocking mineral crystals, neutral diffuse daylight, physically plausible color, no cast shadows, glare, perspective, vignettes or lighting gradients. Entire panel is one continuous stone surface without repeated little tiles. Aim for 2048x2048 or greater.\nTop left: G654 Blue Star granite, medium-dark charcoal/slate gray with subtle cool undertone, fairly fine interlocking gray-white crystals and black minerals, clearly gray not black or blue paint.\nTop right: G603 Country granite, pale silver-gray salt-and-pepper grain, white and light gray quartz with fine black flecks, lighter than G654.\nBottom left: G664 Peach Blossom granite, warm muted peach-pink and rosy beige feldspar, interlocking gray quartz and black specks, natural subtle peach and pink warmth, NOT brown or gray monochrome.\nBottom right: Imperial Red granite, rich saturated deep terracotta-red and crimson chunky feldspar with black and gray quartz crystals, vivid natural red not dark brown or black.\nSharp fine natural detail throughout. Neutral color-balanced exposure, each panel has uniform overall brightness, never a bright side and a dark side. No paving joints; just the stone surface for each material.",
+    "order": [
+      "g654",
+      "g603",
+      "g664",
+      "imperial-red"
+    ],
+    "grid": [
+      2,
+      2
+    ],
+    "cropInset": 4
+  }
+}

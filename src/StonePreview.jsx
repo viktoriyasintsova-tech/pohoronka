@@ -1,6 +1,7 @@
 import React,{forwardRef,useEffect,useImperativeHandle,useRef,useState} from 'react';
 import {asset} from './catalog-data';
 import Icon from './Icon';
+import {applyStoneTexture} from './stone-texture';
 const imageCache=new Map();
 function loadImage(src){
  if(!imageCache.has(src)){
@@ -28,14 +29,23 @@ export default forwardRef(function StonePreview({model,variant,material,config={
   const pad=70,available=size-pad*2,aspect=variant?.previewIsolated&&variant.dimensions?.length>1?variant.dimensions[1]/variant.dimensions[0]:original.width/original.height;
   const w=aspect>=1?available:available*aspect,h=aspect>=1?available/aspect:available;
   c.drawImage(original,(size-w)/2,(size-h)/2,w,h);const pixels=c.getImageData(0,0,size,size),d=pixels.data;
-  let texture;
-  if(material){const samples=await loadImage(asset('assets/materials/samples.jpg'));if(cancelled)return;const tile=document.createElement('canvas');tile.width=120;tile.height=120;const t=tile.getContext('2d',{willReadFrequently:true});t.drawImage(samples,material.sample[0],material.sample[1],96,96,0,0,120,120);texture=t.getImageData(0,0,120,120).data;}
-  for(let y=0;y<size;y++)for(let x=0;x<size;x++){
-   const i=(y*size+x)*4;if(!d[i+3])continue;const r=d[i],g=d[i+1],b=d[i+2],low=Math.min(r,g,b),high=Math.max(r,g,b),lum=(r+g+b)/3;
-   // Knock out only the neutral white studio backdrop; preserve the model's exact contour.
-   if(low>243&&high-low<12){d[i+3]=0;continue;}
-   const marble=model.stone==='Мрамор',green=g>r*1.22&&g>b*1.15;
-   if(texture&&!green&&high-low<(marble?110:55)&&lum<(marble?244:125)&&!(y>size*.72&&lum>65&&!marble)){const ti=((Math.floor(y*1.5)%120)*120+Math.floor(x*1.5)%120)*4,shade=marble?.52+lum/255*.62:.64+lum/255*.72;for(let k=0;k<3;k++)d[i+k]=clamp(Math.round(texture[ti+k]*shade+(lum>160?(lum-160)*.12:0)),0,255);}
+  // Determine transparency from the original, never from the new stone's
+  // white crystals: otherwise light marble/granite develops transparent holes.
+  for(let i=0;i<d.length;i+=4){
+   const low=Math.min(d[i],d[i+1],d[i+2]),high=Math.max(d[i],d[i+1],d[i+2]);
+   if(low>243&&high-low<12)d[i+3]=0;
+  }
+  if(material){
+   const image=await loadImage(asset(material.texture));if(cancelled)return;
+   const layer=document.createElement('canvas');layer.width=size;layer.height=size;
+   const t=layer.getContext('2d',{willReadFrequently:true});
+   t.imageSmoothingEnabled=true;t.imageSmoothingQuality='high';
+   // One continuous square stone surface across the object, without repeats.
+   t.drawImage(image,0,0,size,size);
+   const texture=t.getImageData(0,0,size,size).data;
+   t.clearRect(0,0,size,size);t.filter='blur(5px)';t.drawImage(surface,0,0);t.filter='none';
+   const shading=t.getImageData(0,0,size,size).data;
+   applyStoneTexture(d,texture,shading,{marble:model.stone==='Мрамор'});
   }
   c.putImageData(pixels,0,0);ctx.fillStyle='#f3f1ed';ctx.fillRect(0,0,size,size);ctx.drawImage(surface,0,0);
   if(config.portrait){const photo=await loadImage(config.portrait);if(cancelled)return;const pw=config.triplex?170:150,ph=200,px=clamp(Number(config.portraitX)||50,10,90)/100*size,py=clamp(Number(config.portraitY)||36,10,85)/100*size;ctx.save();ctx.beginPath();if(config.triplex)ctx.rect(px-pw/2,py-ph/2,pw,ph);else ctx.ellipse(px,py,pw/2,ph/2,0,0,Math.PI*2);ctx.clip();const fill=Math.max(pw/photo.width,ph/photo.height);ctx.drawImage(photo,px-photo.width*fill/2,py-photo.height*fill/2,photo.width*fill,photo.height*fill);ctx.restore();if(config.triplex){ctx.strokeStyle='#d5d9d9';ctx.lineWidth=4;ctx.strokeRect(px-pw/2,py-ph/2,pw,ph);for(const sx of [-1,1])for(const sy of [-1,1]){ctx.beginPath();ctx.arc(px+sx*(pw/2-9),py+sy*(ph/2-9),3,0,Math.PI*2);ctx.fillStyle='#e2e2dd';ctx.fill()}}}
