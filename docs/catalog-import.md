@@ -35,3 +35,5 @@ node scripts/verify-catalog.mjs
 ```
 
 HTML при импорте кэшируется в `/tmp/istok-arkado-source`; публичный список стел конструктора использован как источник точных контуров (`/tmp/arkado-models.html`). Он получается запросом к `https://arkado-granit.ru/calculator/?action=getMonuments`. Проверять изменения поставщика перед обновлением каталога и не добавлять его цены в наш прайс автоматически.
+
+Шрифт Jost размещён локально (`public/assets/fonts/`) с оригинальной лицензией SIL OFL, чтобы отрисовка интерфейса не зависела от Google Fonts. Источник: https://github.com/google/fonts/tree/main/ofl/jost .
