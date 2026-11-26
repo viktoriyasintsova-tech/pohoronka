@@ -22,3 +22,13 @@ assert.equal(forged.length,22,'original PDF assortment retained');
 const own=read('src/current-catalog.json');assert.equal(own.length,6);assert.equal(own[0].variants[0].price,18000,'own starting price retained');
 const text=JSON.stringify(models);for(const forbidden of ['office.arkado','3852','Гарантия 2 года','Изготовление до 1 месяца'])assert(!text.includes(forbidden),forbidden);
 console.log('PASS: 370 source variants, 125 monument models / 332 monument variants; all local images present; excluded source categories and prices absent; original 22 PDF products and own prices retained.');
+const paving=read('src/paving-catalog.json'),pavingSource=read('scripts/data/paving-source.json');
+assert.equal(paving.length,9);
+assert.equal(paving.filter(p=>p.pavingType==='granite').length,7);
+assert.equal(paving.filter(p=>p.pavingType==='concrete').length,2);
+for(const p of paving){
+ assert.equal(p.price,null);assert(existsSync(new URL('../public/'+p.image,import.meta.url)));
+ for(const v of p.variants){assert.equal(v.price,null);assert.equal(v.dimensions.length,3);assert(v.dimensions.every(n=>n>0));}
+ if(p.pavingType==='granite')assert.deepEqual(p.variants[0].dimensions,pavingSource.find(x=>x.sourceUrl===p.sourceUrl).sizes[0].map(Number));
+}
+console.log('PASS: 7 granite tile dimensions match source; 2 concrete paving models; all tile prices null and images local.');

@@ -1,0 +1,454 @@
+[
+  {
+    "id": "tile-chernyy",
+    "name": "Гранитная плитка · Чёрный гранит",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "shanxi",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-chernyy/",
+    "image": "assets/materials/textures/shanxi.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-chernyy-size",
+        "dimensions": [
+          600,
+          300,
+          20
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 20 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "Чёрный гранит"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/57d/57d85f7d313e75eecf5e0c9a54729f66.jpg"
+  },
+  {
+    "id": "tile-imperial-red",
+    "name": "Гранитная плитка · Imperial Red",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "imperial-red",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-imperial-red/",
+    "image": "assets/materials/textures/imperial-red.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-imperial-red-size",
+        "dimensions": [
+          600,
+          300,
+          20
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 20 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "Imperial Red"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/18c/18c5c7a4b52eded0252549d049d82ddc.jpg"
+  },
+  {
+    "id": "tile-kantri",
+    "name": "Гранитная плитка · G 603 · Кантри",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "g603",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-kantri/",
+    "image": "assets/materials/textures/g603.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-kantri-size",
+        "dimensions": [
+          600,
+          300,
+          20
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 20 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "G 603 · Кантри"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/110/1102a4791b7df81dfa890511696215da.jpg"
+  },
+  {
+    "id": "tile-sinyaya-zvezda",
+    "name": "Гранитная плитка · G 654 · Синяя звезда",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "g654",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-sinyaya-zvezda/",
+    "image": "assets/materials/textures/g654.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-sinyaya-zvezda-size",
+        "dimensions": [
+          600,
+          300,
+          20
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 20 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "G 654 · Синяя звезда"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/755/7555f9332305191fc0c86bacdcb522f8.jpg"
+  },
+  {
+    "id": "tile-spelyy-persik",
+    "name": "Гранитная плитка · G 664 · Спелый персик",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "g664",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-spelyy-persik/",
+    "image": "assets/materials/textures/g664.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-spelyy-persik-size",
+        "dimensions": [
+          600,
+          300,
+          18
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 18 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "G 664 · Спелый персик"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/9ae/9aea2917bc902bba39ec47a05c196dc2.jpeg"
+  },
+  {
+    "id": "tile-tan-braun",
+    "name": "Гранитная плитка · Tan Brown",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "tan-brown",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-tan-braun/",
+    "image": "assets/materials/textures/tan-brown.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-tan-braun-size",
+        "dimensions": [
+          600,
+          300,
+          20
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 20 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "Tan Brown"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/288/28803cca0ee2dba3b6fd0ad509d903db.jpg"
+  },
+  {
+    "id": "tile-zhemchuzhnyy-tsvetok",
+    "name": "Гранитная плитка · Жемчужный цветок",
+    "category": "paving",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "granite",
+    "tileForm": "rectangle",
+    "defaultMaterial": "",
+    "sourceUrl": "https://arkado-granit.ru/catalog/granitnaya-plitka/plitka-iz-granita-zhemchuzhnyy-tsvetok/",
+    "image": "assets/paving/tile-zhemchuzhnyy-tsvetok.jpg",
+    "price": null,
+    "variants": [
+      {
+        "id": "tile-zhemchuzhnyy-tsvetok-size",
+        "dimensions": [
+          600,
+          300,
+          20
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "600 × 300 × 20 мм"
+          },
+          {
+            "label": "Материал",
+            "value": "Жемчужный цветок"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ],
+    "sourceImage": "https://arkado-granit.ru/upload/iblock/7ad/7ad35e153af1602f7e58621e56771d68.jpg"
+  },
+  {
+    "id": "paving-rectangle",
+    "name": "Тротуарная плитка · Кирпичик",
+    "category": "paving",
+    "stone": "Бетон",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "concrete",
+    "tileForm": "rectangle",
+    "defaultMaterial": "concrete-gray",
+    "image": "assets/materials/textures/gray.jpg",
+    "price": null,
+    "sourceUrl": "https://braer.ru/catalog/trotuarnaya-plitka/trotuarnaya-plitka-pryamougolnik-pesochnyj-h-60-mm/",
+    "imageNote": "Визуализация типовой формы. Оттенки, наличие и комплектацию уточняем перед заказом.",
+    "variants": [
+      {
+        "id": "paving-rectangle-0",
+        "dimensions": [
+          200,
+          100,
+          40
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер элемента",
+            "value": "200 × 100 × 40 мм"
+          },
+          {
+            "label": "Комплектация",
+            "value": "Прямоугольный элемент"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      },
+      {
+        "id": "paving-rectangle-1",
+        "dimensions": [
+          200,
+          100,
+          60
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер элемента",
+            "value": "200 × 100 × 60 мм"
+          },
+          {
+            "label": "Комплектация",
+            "value": "Прямоугольный элемент"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      },
+      {
+        "id": "paving-rectangle-2",
+        "dimensions": [
+          200,
+          100,
+          80
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер элемента",
+            "value": "200 × 100 × 80 мм"
+          },
+          {
+            "label": "Комплектация",
+            "value": "Прямоугольный элемент"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paving-old-town",
+    "name": "Тротуарная плитка · Старый город",
+    "category": "paving",
+    "stone": "Бетон",
+    "collection": "standard",
+    "source": "paving",
+    "pavingType": "concrete",
+    "tileForm": "old-town",
+    "defaultMaterial": "concrete-gray",
+    "image": "assets/materials/textures/gray.jpg",
+    "price": null,
+    "sourceUrl": "https://artikospb.ru/f/prajs-list.pdf",
+    "imageNote": "Визуализация типовой формы. Оттенки, наличие и комплектацию уточняем перед заказом.",
+    "variants": [
+      {
+        "id": "paving-old-town-0",
+        "dimensions": [
+          172,
+          115,
+          60
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер элемента",
+            "value": "172 × 115 × 60 мм"
+          },
+          {
+            "label": "Комплектация",
+            "value": "Набор трёх форматов"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      },
+      {
+        "id": "paving-old-town-1",
+        "dimensions": [
+          115,
+          115,
+          60
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер элемента",
+            "value": "115 × 115 × 60 мм"
+          },
+          {
+            "label": "Комплектация",
+            "value": "Набор трёх форматов"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      },
+      {
+        "id": "paving-old-town-2",
+        "dimensions": [
+          86,
+          115,
+          60
+        ],
+        "price": null,
+        "specs": [
+          {
+            "label": "Размер элемента",
+            "value": "86 × 115 × 60 мм"
+          },
+          {
+            "label": "Комплектация",
+            "value": "Набор трёх форматов"
+          },
+          {
+            "label": "Единица расчёта",
+            "value": "м²"
+          }
+        ]
+      }
+    ]
+  }
+]

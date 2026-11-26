@@ -81,3 +81,37 @@ button.text-link.contact-trigger{background:none;border:0;border-bottom:1px soli
  .modern-preview .stone-preview>canvas{height:180px}
 }
 @media(max-width:700px){.modern-controls .material-picker button>span:last-child{min-width:0;overflow-wrap:anywhere}}
+/* Shared material choice in cards and product detail. Native selects retain
+   familiar iOS/Android interaction, keyboard support and visible labels. */
+.product-material-picker{width:100%;margin-top:20px;min-width:0;text-align:left}
+.product-material-picker>label{display:block;margin-bottom:8px;font-size:14px}
+.product-material-picker>div{display:flex;align-items:center;gap:10px;min-width:0}
+.product-material-picker select{width:100%;min-width:0;min-height:48px;font-size:16px;background:#fff;padding:10px 28px 10px 12px}
+.picker-sample{display:block;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;flex:none}
+.product-material-picker.compact{margin-top:16px}
+.paving-preview{display:block;width:100%;height:auto;aspect-ratio:1;background:#f3f1ed}
+.catalog-card .card-image .stone-preview{height:100%;width:100%}
+.catalog-card .card-image .stone-preview>canvas{height:100%;object-fit:contain}
+.catalog-card .card-image .preview-status{bottom:8px}
+.unified-card .card-bottom .text-link{min-height:48px;align-items:center;padding:8px 0}
+.product-detail .product-material-picker{margin:0}
+@media(max-width:700px){
+ .catalog-categories{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;padding:2px 2px 12px;gap:8px}
+ .catalog-categories a{flex:none;min-height:48px;font-size:14px}
+ .catalog-page .extended-toolbar input,.catalog-page .extended-toolbar select,.product-page select{font-size:16px;min-height:48px}
+ .product-material-picker select{min-height:50px;font-size:16px}
+ .product-page .product-detail{gap:24px}
+ .product-page .product-detail>.forged-photo{position:relative;top:auto}
+ .product-page .product-detail>.forged-photo .paving-preview{max-height:420px;object-fit:contain}
+ .unified-card .card-copy h3{font-size:21px}
+ .unified-card .card-sizes{font-size:14px}
+ .catalog-pagination .icon-button{width:48px;height:48px}
+}
+@media(max-width:430px){
+ .catalog-page .catalog-grid,.related-products .catalog-grid,#catalog:not(.catalog-page) .catalog-grid{grid-template-columns:1fr}
+ .unified-card .card-image{aspect-ratio:1.15}
+ .unified-card .card-image .paving-preview{height:100%;object-fit:contain}
+ .unified-card .card-copy{padding:16px 0 0}
+ .unified-card .card-copy .eyebrow{font-size:12px}
+}
+@media(max-width:700px){.catalog-page.section{padding-top:32px}.catalog-page .section-heading h1{font-size:38px}.catalog-page .section-heading .muted{font-size:14px}.catalog-page .section-heading{margin-bottom:24px}.catalog-page .section-heading .text-link{margin-top:16px}}
