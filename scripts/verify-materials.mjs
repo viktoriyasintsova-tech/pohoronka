@@ -41,3 +41,26 @@ for(const side of [false,true]){
  for(let i=0;i<field.length;i+=4)assert.deepEqual([...field.slice(i,i+4)],[145,95,65,255]);
 }
 console.log('PASS: 13 textures; 9 monument / 6 paving options; 6 models with separate stele and pedestal faces; side lighting, polished highlights, milling depth and brown hue preserved.');
+const {stoneCoverage}=await import('../src/stone-segmentation.js');
+const width=15,height=15,pixels=new Uint8ClampedArray(width*height*4);
+for(let i=0;i<pixels.length;i+=4)pixels.set([255,255,255,255],i);
+for(let y=2;y<13;y++)for(let x=2;x<13;x++)pixels.set([65,65,65,255],(y*width+x)*4);
+for(const [x,level] of [[4,0],[5,150],[6,151],[7,220],[8,255]])pixels.set([level,level,level,255],(5*width+x)*4);
+const coverage=stoneCoverage(pixels,width,height).coverage;
+for(const x of [4,5,6,7,8])assert.equal(coverage[5*width+x],255,'reflections and bright internal pixels remain stone');
+assert.equal(coverage[0],0,'connected studio backdrop excluded');
+const isolated=stoneCoverage(pixels,width,height,{isolated:true}).coverage;
+assert(isolated.every(a=>a===255),'isolated contours never use brightness cutoffs');
+const grass=new Uint8ClampedArray(15*15*4);
+for(let i=0;i<grass.length;i+=4)grass.set([15,60,12,255],i);
+grass.set([0,0,0,255],(7*15+7)*4);
+assert.equal(stoneCoverage(grass,15,15).coverage[7*15+7],0,'dark grass gaps do not become bright stone speckles');
+console.log('PASS: full-surface coverage across reflections; alpha contours; studio backdrop; vegetation gaps protected.');
+const reflection=new Uint8ClampedArray(25*25*4);
+for(let i=0;i<reflection.length;i+=4)reflection.set([80,80,80,255],i);
+for(let y=4;y<8;y++)for(let x=9;x<17;x++)reflection.set([15,55,12,255],(y*25+x)*4);
+for(let y=18;y<24;y++)for(let x=3;x<23;x++)reflection.set([15,55,12,255],(y*25+x)*4);
+const separated=stoneCoverage(reflection,25,25).coverage;
+assert.equal(separated[5*25+12],255,'green reflection on stele is still stone');
+assert.equal(separated[21*25+12],0,'actual lower flowerbed is preserved');
+console.log('PASS: grass protection does not leave a dark reflected patch on the stele.');

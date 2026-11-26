@@ -1,0 +1,886 @@
+[
+  {
+    "id": "user-type-8",
+    "name": "Тип 8 (15)",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/type-8.jpg",
+    "previewImage": "assets/user-catalog/type-8.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-type-8-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/type-8.jpg",
+        "previewImage": "assets/user-catalog/type-8.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-ararat",
+    "name": "Арарат",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/ararat.jpg",
+    "previewImage": "assets/user-catalog/ararat.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-ararat-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/ararat.jpg",
+        "previewImage": "assets/user-catalog/ararat.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-26",
+    "name": "Форма 26",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-26.jpg",
+    "previewImage": "assets/user-catalog/form-26.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-26-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-26.jpg",
+        "previewImage": "assets/user-catalog/form-26.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-breeze",
+    "name": "Бриз",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/breeze.jpg",
+    "previewImage": "assets/user-catalog/breeze.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-breeze-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/breeze.jpg",
+        "previewImage": "assets/user-catalog/breeze.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-27",
+    "name": "Форма 27",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-27.jpg",
+    "previewImage": "assets/user-catalog/form-27.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-27-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-27.jpg",
+        "previewImage": "assets/user-catalog/form-27.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-30",
+    "name": "Форма 30",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-30.jpg",
+    "previewImage": "assets/user-catalog/form-30.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-30-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-30.jpg",
+        "previewImage": "assets/user-catalog/form-30.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-80",
+    "name": "Форма 80",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-80.jpg",
+    "previewImage": "assets/user-catalog/form-80.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-80-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-80.jpg",
+        "previewImage": "assets/user-catalog/form-80.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-42",
+    "name": "Форма 42",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-42.jpg",
+    "previewImage": "assets/user-catalog/form-42.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-42-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-42.jpg",
+        "previewImage": "assets/user-catalog/form-42.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-94",
+    "name": "Форма 94 (74)",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-94.jpg",
+    "previewImage": "assets/user-catalog/form-94.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-94-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-94.jpg",
+        "previewImage": "assets/user-catalog/form-94.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-type-100",
+    "name": "Тип 100",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/type-100.jpg",
+    "previewImage": "assets/user-catalog/type-100.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-type-100-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/type-100.jpg",
+        "previewImage": "assets/user-catalog/type-100.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-silence",
+    "name": "Тишина",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/silence.jpg",
+    "previewImage": "assets/user-catalog/silence.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-silence-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/silence.jpg",
+        "previewImage": "assets/user-catalog/silence.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-form-23",
+    "name": "Форма 23",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "shaped",
+    "image": "assets/user-catalog/form-23.jpg",
+    "previewImage": "assets/user-catalog/form-23.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-form-23-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/form-23.jpg",
+        "previewImage": "assets/user-catalog/form-23.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-lacrima",
+    "name": "Лакрима (85)",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "family",
+    "form": "shaped",
+    "image": "assets/user-catalog/lacrima.jpg",
+    "previewImage": "assets/user-catalog/lacrima.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-lacrima-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/lacrima.jpg",
+        "previewImage": "assets/user-catalog/lacrima.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-family-59",
+    "name": "Форма 59 · семейный",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "family",
+    "form": "shaped",
+    "image": "assets/user-catalog/family-59.jpg",
+    "previewImage": "assets/user-catalog/family-59.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-family-59-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/family-59.jpg",
+        "previewImage": "assets/user-catalog/family-59.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-family-21",
+    "name": "Форма 21 · семейный",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "family",
+    "form": "shaped",
+    "image": "assets/user-catalog/family-21.jpg",
+    "previewImage": "assets/user-catalog/family-21.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-family-21-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/family-21.jpg",
+        "previewImage": "assets/user-catalog/family-21.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-love",
+    "name": "Любовь (54)",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "family",
+    "form": "shaped",
+    "image": "assets/user-catalog/love.jpg",
+    "previewImage": "assets/user-catalog/love.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-love-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/love.jpg",
+        "previewImage": "assets/user-catalog/love.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-waves-complex",
+    "name": "Мемориальный комплекс «Волны»",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "standard",
+    "source": "user-brochure",
+    "audience": "family",
+    "form": "shaped",
+    "image": "assets/user-catalog/waves-complex.jpg",
+    "previewImage": "assets/user-catalog/waves-complex.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-waves-complex-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/waves-complex.jpg",
+        "previewImage": "assets/user-catalog/waves-complex.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-6-27",
+    "name": "Форма 6.27",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-6-27.jpg",
+    "previewImage": "assets/user-catalog/carved-6-27.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-6-27-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-6-27.jpg",
+        "previewImage": "assets/user-catalog/carved-6-27.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-6-28",
+    "name": "Форма 6.28",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-6-28.jpg",
+    "previewImage": "assets/user-catalog/carved-6-28.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-6-28-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-6-28.jpg",
+        "previewImage": "assets/user-catalog/carved-6-28.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-2",
+    "name": "Форма 2 · с цветами",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-2.jpg",
+    "previewImage": "assets/user-catalog/carved-2.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-2-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-2.jpg",
+        "previewImage": "assets/user-catalog/carved-2.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-119",
+    "name": "Форма 119",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-119.jpg",
+    "previewImage": "assets/user-catalog/carved-119.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-119-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-119.jpg",
+        "previewImage": "assets/user-catalog/carved-119.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-147",
+    "name": "Форма 147",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-147.jpg",
+    "previewImage": "assets/user-catalog/carved-147.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-147-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-147.jpg",
+        "previewImage": "assets/user-catalog/carved-147.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-157",
+    "name": "Форма 157",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-157.jpg",
+    "previewImage": "assets/user-catalog/carved-157.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-157-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-157.jpg",
+        "previewImage": "assets/user-catalog/carved-157.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-323",
+    "name": "Форма 323",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "family",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-323.jpg",
+    "previewImage": "assets/user-catalog/carved-323.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-323-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-323.jpg",
+        "previewImage": "assets/user-catalog/carved-323.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-carved-240",
+    "name": "Форма 240",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/carved-240.jpg",
+    "previewImage": "assets/user-catalog/carved-240.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-carved-240-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/carved-240.jpg",
+        "previewImage": "assets/user-catalog/carved-240.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  },
+  {
+    "id": "user-chapel-doves",
+    "name": "Часовня с голубями",
+    "category": "monuments",
+    "stone": "Гранит",
+    "collection": "elite",
+    "source": "user-brochure",
+    "audience": "single",
+    "form": "milled",
+    "image": "assets/user-catalog/chapel-doves.jpg",
+    "previewImage": "assets/user-catalog/chapel-doves.jpg",
+    "imageNote": "Визуализация восстановлена по вашему каталогу. Размеры, материал и детали резьбы согласуем по эскизу.",
+    "price": null,
+    "variants": [
+      {
+        "id": "user-chapel-doves-custom",
+        "dimensions": [],
+        "specs": [
+          {
+            "label": "Размер",
+            "value": "Индивидуальный, по согласованию"
+          },
+          {
+            "label": "Основание",
+            "value": "По выбранной комплектации"
+          }
+        ],
+        "image": "assets/user-catalog/chapel-doves.jpg",
+        "previewImage": "assets/user-catalog/chapel-doves.jpg",
+        "previewIsolated": false,
+        "price": null
+      }
+    ]
+  }
+]

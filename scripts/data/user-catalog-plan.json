@@ -1,0 +1,45 @@
+{
+ "folder":"Добавить эти памятники",
+ "pages":{
+  "vertical-a":"50839ff3-cb1c-4cb0-98e2-406e47abf4c1.jpeg",
+  "vertical-b":"0d8b279d-3e15-4359-906d-c2ed7c056567.jpeg",
+  "vertical-c":"53fc371c-7e1f-4440-87ef-5938290be082.jpeg",
+  "family":"356e56dc-1d39-4193-bd12-809dc76a727d.jpeg",
+  "carved":"c378b709-09d0-4820-b0ef-d1bc373bf307.jpeg"
+ },
+ "new":[
+  ["type-8","Тип 8 (15)","vertical-a","left page top row middle","single"],
+  ["ararat","Арарат","vertical-a","right page middle row left","single"],
+  ["breeze","Бриз","vertical-a","right page middle row right","single"],
+  ["form-26","Форма 26","vertical-b","right page top row left","single"],
+  ["form-27","Форма 27","vertical-b","right page top row middle","single"],
+  ["form-30","Форма 30","vertical-b","right page middle row left","single"],
+  ["form-42","Форма 42","vertical-b","right page middle row middle","single"],
+  ["form-80","Форма 80","vertical-b","right page middle row right","single"],
+  ["form-94","Форма 94 (74)","vertical-b","right page bottom row left","single"],
+  ["form-23","Форма 23","vertical-b","right page bottom row middle","single"],
+  ["type-100","Тип 100","vertical-c","right page bottom row middle","single"],
+  ["silence","Тишина","vertical-c","right page bottom row right","single"],
+  ["family-21","Форма 21 · семейный","family","left page top row left","family"],
+  ["lacrima","Лакрима (85)","family","left page bottom row left","family"],
+  ["love","Любовь (54)","family","right page top row left","family"],
+  ["family-59","Форма 59 · семейный","family","right page top row right","family"],
+  ["waves-complex","Мемориальный комплекс «Волны»","family","right page bottom row left","family"],
+  ["carved-6-27","Форма 6.27","carved","main foreground page top row left (NOT the partially visible background page)","single"],
+  ["carved-6-28","Форма 6.28","carved","main foreground page top row middle (NOT the partially visible background page)","single"],
+  ["carved-2","Форма 2 · с цветами","carved","main foreground page top row right","single"],
+  ["carved-119","Форма 119","carved","main foreground page middle row left","single"],
+  ["carved-147","Форма 147","carved","main foreground page middle row middle","single"],
+  ["carved-157","Форма 157","carved","main foreground page middle row right","single"],
+  ["carved-240","Форма 240","carved","main foreground page bottom row left","single"],
+  ["chapel-doves","Часовня с голубями","carved","main foreground page bottom row middle","single"],
+  ["carved-323","Форма 323","carved","main foreground page bottom row right","family"]
+ ],
+ "duplicates":{
+  "Тип 7":"arkado-3899","Тип 9":"arkado-3900","Тип 10":"arkado-3914","Тип 11":"arkado-4004","Тип 15":"arkado-3963","Тип 20":"arkado-3999","Тип 33":"arkado-4005","Тип 50":"arkado-4010","Тип 56":"arkado-4008","Тип 59":"arkado-4012","Арфа":"arkado-3926","Берёза":"arkado-3929","Закрытая книга":"arkado-3938","Книга прямая":"arkado-3944","Книга дугой":"arkado-3941",
+  "Венера":"arkado-3909","Волна":"arkado-3920","Грация":"arkado-3910","Купола":"arkado-3911","Офелия":"arkado-3912","Перо":"arkado-3913","Сатурн":"arkado-3904","Цефея":"arkado-3908","Форма 18":"arkado-3923","Форма 29":"arkado-3970","Тип 3":"arkado-3917",
+  "Веер":"arkado-3915","2 тюльпана":"arkado-3935","Маргарита":"arkado-3897","Откровение":"arkado-3996","Память":"arkado-3949","Проза":"arkado-3993","Рапсодия 1":"arkado-3886","Рапсодия 2":"arkado-3887","Рапсодия 3":"arkado-3888","Летопись":"arkado-3947","Резолют":"arkado-4014","Розы в вазе":"arkado-3955","Свеча":"arkado-3958","Симфония":"arkado-3892","Факел 3":"arkado-3895","Часовня":"arkado-3965",
+  "Мурена":"arkado-4024","Сати":"arkado-4023","Тортуга":"arkado-4022","Гармония":"arkado-4018","Форма 97":"arkado-4047","Книга":"arkado-4021","Семейный с вазой":"arkado-4025"
+ },
+ "omitted":"Partial thumbnails from the background page are not added because their full silhouettes and labels are not visible. No dimensions or prices are inferred from the brochure."
+}

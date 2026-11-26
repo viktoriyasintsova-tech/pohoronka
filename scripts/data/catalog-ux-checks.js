@@ -5,10 +5,11 @@
  await settle();await settle();
  const page=new URLSearchParams(location.search).get('page'),item=new URLSearchParams(location.search).get('item');
  if(page==='home'){
-  const cards=[...document.querySelectorAll('.featured-card')];expect(cards.length===6,'Six featured forms');
-  expect(!document.querySelector('.featured-catalog input,.featured-catalog select'),'No home configuration fields');
-  if(innerWidth<701)expect(Math.abs(cards[0].getBoundingClientRect().top-cards[1].getBoundingClientRect().top)<2,'Two forms per mobile row');
-  document.querySelector('.featured-catalog').scrollIntoView({behavior:'instant'});
+  const cards=[...document.querySelectorAll('.bento-card')];expect(cards.length===6,'Six bento sections');
+  expect(!document.querySelector('.featured-card,.featured-catalog'),'No monument product list on home');
+  expect(document.querySelector('#builder'),'Constructor retained on home');
+  expect(cards.every(card=>card.querySelector('img')&&card.querySelector('h3')),'Bento images and section names');
+  document.querySelector('#services').scrollIntoView({behavior:'instant'});
  }else if(page==='product'){
   const heading=document.querySelector('.product-heading'),visual=document.querySelector('.product-visual'),config=document.querySelector('.product-config');
   expect(heading.compareDocumentPosition(visual)&Node.DOCUMENT_POSITION_FOLLOWING,'Heading precedes picture');
@@ -30,6 +31,9 @@
   expect(card.querySelector('.card-sizes').textContent.includes('18'),'Size matches selected material');
   expect(card.querySelector('.card-bottom a').href.includes('material=g664'),'Material in product URL');
   expect(card.querySelector('.card-bottom').textContent.includes('По запросу'),'Inquiry price');
+  card.querySelector('input[value="pearl"]').click();await settle();
+  const gallery=card.querySelector('.paving-gallery');gallery.querySelectorAll('button')[1].click();await pause(600);
+  expect(gallery.querySelectorAll('.paving-gallery-slide')[1].querySelector('svg.paving-preview'),'Pearl second view is actual tile geometry, not duplicate sample');
   card.scrollIntoView({behavior:'instant'});
  }
  await settle();expect(document.documentElement.scrollWidth<=innerWidth+1,'No horizontal page overflow');

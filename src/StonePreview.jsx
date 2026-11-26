@@ -33,7 +33,7 @@ export default forwardRef(function StonePreview({model,variant,material,config={
   // white crystals: otherwise light marble/granite develops transparent holes.
   for(let i=0;i<d.length;i+=4){
    const low=Math.min(d[i],d[i+1],d[i+2]),high=Math.max(d[i],d[i+1],d[i+2]);
-   if(low>243&&high-low<12)d[i+3]=0;
+   if(model.source==='price'&&low>243&&high-low<12)d[i+3]=0;
   }
   if(material){
    const image=await loadImage(asset(material.texture));if(cancelled)return;

@@ -1,3 +1,4 @@
+import {stoneCoverage} from './stone-segmentation.js';
 import {studioSurfaces} from './stone-surfaces.js';
 const clamp=(v,lo=0,hi=1)=>Math.max(lo,Math.min(hi,v));
 const canvas=(w,h=w)=>{const c=document.createElement('canvas');c.width=w;c.height=h;return c};
@@ -33,6 +34,7 @@ export function mineralField(source,width,height,size,{span=size*.19,side=false,
 // Bound memory on phones when visitors compare many stones (each field is
 // roughly 3 MB); retain the last two materials for quick back-and-forth.
 const textureCache=new Map();
+const coverageCache=new Map();
 function textureLayer(image,size,material,side=false,offset=0){
  const key=[size,material.kind,side,offset].join(':');
  if(!textureCache.has(image)){
@@ -92,16 +94,41 @@ export function renderStoneMaterial({surface,image,material,model,variant,placem
   }
  }else{
   const texture=textureLayer(image,size,material);
-  // Preserve original lighting on imported studio images. The conservative
-  // fallback mask does not paint pale backgrounds or foliage.
-  const d=original.data;
-  for(let i=0;i<d.length;i+=4){
-   const r=d[i],g=d[i+1],b=d[i+2],lum=(r+g+b)/3;
-   if(!d[i+3]||g>r*1.22&&g>b*1.15)continue;
-   if(lum>150||Math.max(r,g,b)-Math.min(r,g,b)>90)continue;
-   const color=shadeStone([texture[i],texture[i+1],texture[i+2]],lum,{marble:material.kind==='Мрамор'});
-   for(let k=0;k<3;k++)out.data[i+k]=color[k];
+  const d=original.data,key=[model.id,variant?.id,size,placement.x,placement.y,placement.w,placement.h].join(':');
+  if(!coverageCache.has(key)){
+   if(coverageCache.size>=4)coverageCache.delete(coverageCache.keys().next().value);
+   coverageCache.set(key,stoneCoverage(d,size,size,{isolated:variant?.previewIsolated,softBackdrop:model.stone!=='Мрамор'}));
+  }
+  const {coverage,background}=coverageCache.get(key);
+  for(let p=0;p<coverage.length;p++){
+   const i=p*4;
+   if(background[p]){if(Math.min(d[i],d[i+1],d[i+2])>243)out.data[i+3]=0;continue}
+   const a=coverage[p]/255;if(!a)continue;
+   const lum=(d[i]+d[i+1]+d[i+2])/3;
+   const light=variant?.previewIsolated?28+lum*.18:model.stone==='Мрамор'?lum*.18:lum;
+   const color=shadeStone([texture[i],texture[i+1],texture[i+2]],light,{marble:material.kind==='Мрамор'});
+   for(let k=0;k<3;k++)out.data[i+k]=Math.round(d[i+k]*(1-a)+color[k]*a);
   }
  }
- c.putImageData(out,0,0);
+ if(variant?.previewIsolated){
+  // Give a real transparent contour physical thickness. The front outline is
+  // unchanged; the back is offset by the supplied slab thickness and lit as a
+  // separate face. Unlike brightness masking, no offset copies remain visible
+  // on top of the front surface.
+  const front=canvas(size);front.getContext('2d').putImageData(out,0,0);
+  const side=canvas(size),s=side.getContext('2d'),sidePixels=s.createImageData(size,size);
+  const texture=textureLayer(image,size,material,true);
+  let left=size,right=0,bottom=0;
+  for(let p=0;p<size*size;p++){
+   const i=p*4;if(!original.data[i+3])continue;
+   sidePixels.data[i+3]=original.data[i+3];
+   for(let k=0;k<3;k++)sidePixels.data[i+k]=Math.round(texture[i+k]*.48);
+   const x=p%size,y=Math.floor(p/size);left=Math.min(left,x);right=Math.max(right,x);bottom=Math.max(bottom,y);
+  }
+  s.putImageData(sidePixels,0,0);c.clearRect(0,0,size,size);
+  c.save();c.filter=`blur(${size*.009}px)`;c.fillStyle='#352b2624';c.beginPath();c.ellipse((left+right)/2,bottom+size*.006,Math.max(1,(right-left)*.48),size*.009,0,0,Math.PI*2);c.fill();c.restore();
+  const depth=clamp(placement.h/(variant.dimensions?.[0]||1000)*(variant.dimensions?.[2]||50)*.35,2,size*.027);
+  for(let step=Math.ceil(depth);step>0;step--)c.drawImage(side,step,-step*.35);
+  c.drawImage(front,0,0);
+ }else c.putImageData(out,0,0);
 }

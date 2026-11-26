@@ -32,3 +32,13 @@ for(const p of paving){
  if(p.pavingType==='granite')assert.deepEqual(p.variants[0].dimensions,pavingSource.find(x=>x.sourceUrl===p.sourceUrl).sizes[0].map(Number));
 }
 console.log('PASS: 7 granite tile dimensions match source; 2 concrete paving models; all tile prices null and images local.');
+const added=read('src/user-catalog.json'),plan=read('scripts/data/user-catalog-plan.json');
+assert.equal(added.length,26);assert.equal(plan.new.length,26);assert.equal(Object.keys(plan.duplicates).length,49);
+const existingIds=new Set(models.map(m=>m.id));
+for(const [name,id] of Object.entries(plan.duplicates))assert(existingIds.has(id),'duplicate reference '+name);
+assert.equal(new Set(added.map(m=>m.id)).size,26);
+for(const m of added){
+ assert(!existingIds.has(m.id));assert.equal(m.price,null);assert(existsSync(new URL('../public/'+m.image,import.meta.url)));
+ assert(m.variants.every(v=>v.price===null&&v.dimensions.length===0),'no invented brochure prices or dimensions');
+}
+console.log('PASS: 26 restored user models; 49 duplicate references resolve to existing models; unknown dimensions and prices remain unspecified.');
