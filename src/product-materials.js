@@ -3,6 +3,7 @@ export const concreteMaterials=[{id:'concrete-gray',name:'Бетон · серы
 export function materialsFor(item){
  if(item.stone==='Металл')return [];
  if(item.pavingType==='concrete')return concreteMaterials;
+ if(item.pavingType==='selection')return [...materialsFor({category:'paving'}),...concreteMaterials];
  if(item.category==='paving')return [...stoneMaterials.filter(m=>m.uses.includes('paving')),{id:'pearl',name:'Жемчужный цветок',texture:'assets/paving/tile-zhemchuzhnyy-tsvetok.jpg'}];
  return monumentMaterials;
 }

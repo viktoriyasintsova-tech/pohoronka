@@ -3,20 +3,7 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
 const base=pathToFileURL(process.cwd()+'/public/').href;
 const result=await build({entryPoints:['src/main.jsx'],bundle:true,write:false,format:'iife',loader:{'.css':'empty'},define:{'import.meta.env.BASE_URL':JSON.stringify(base),'process.env.NODE_ENV':'"production"'}});
-const test=String.raw`(async()=>{
- const wait=()=>new Promise(r=>setTimeout(r,200));await wait();await wait();
- const expect=(ok,msg)=>{if(!ok)throw Error(msg)};
- const cards=[...document.querySelectorAll('.catalog-card')];expect(cards.length>0,'Products displayed');
- expect(!document.querySelector('.catalog-colors'),'Old color selector removed');
- const card=cards.find(c=>c.textContent.includes('Кирпичик'))||cards.find(c=>c.querySelector('select'));
- const select=card.querySelector('select');expect(select,'Material selector displayed');
- select.value=select.querySelector('option[value="concrete-brown"]')?'concrete-brown':'tan-brown';select.dispatchEvent(new Event('change',{bubbles:true}));await wait();
- expect(card.querySelector('a').href.includes('material='+select.value),'Selection passed into product URL');
- expect(card.querySelector('.card-bottom').textContent.includes('По запросу'),'Custom material price is by request');
- expect(document.documentElement.scrollWidth<=innerWidth+1,'No page overflow');
- expect(parseInt(getComputedStyle(select).fontSize)>=16,'Readable native selector');
- expect(select.getBoundingClientRect().height>=48,'Touch target at least 48px');
- const report=document.createElement('output');report.id='qa-result';report.textContent='PASS: material selection, product URL, inquiry price, native control size, viewport fit';document.body.append(report);document.title='PASS';
-})().catch(e=>{document.title='FAIL';console.error(e);const p=document.createElement('pre');p.textContent=e.message;document.body.append(p)});`;
+const test=readFileSync(new URL('./data/catalog-ux-checks.js',import.meta.url),'utf8');
+
 const css=readFileSync('src/style.css','utf8').replaceAll("url('/assets/",`url('${base}assets/`);
 writeFileSync(process.argv[2]||'/private/tmp/istok-catalog.html',`<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>${css}</style><div id="root"></div><script>${result.outputFiles[0].text.replaceAll('</script','<\\/script')}</script><script>${test}</script></html>`);
