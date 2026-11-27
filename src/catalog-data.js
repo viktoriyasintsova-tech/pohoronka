@@ -9,9 +9,15 @@ import forged from './forged-catalog.json';
 export const ownMonuments=current.map(m=>({...m,category:'monuments',stone:'Гранит',collection:'standard',source:'price',previewImage:m.image,variants:m.variants.map(v=>({...v,specs:[{label:'Стела',value:v.dimensions.join(' × ')+' мм'}],image:m.image,previewImage:m.image}))}));
 export const referenceModels=extended.models;
 const retained=item=>!replacements.aliases[item.id];
-const ermisModels=[...ermis.models].sort((a,b)=>Number(b.id==='ermis-2')-Number(a.id==='ermis-2'));
-export const monumentModels=[...ermisModels.filter(m=>m.category==='monuments'),...ownMonuments.filter(retained),...userModels.filter(retained),...referenceModels.filter(m=>m.category==='monuments').filter(retained)];
-export const allProducts=[...ermisModels,pavingFamily,...userModels.filter(retained),...paving,...ownMonuments.filter(retained),...referenceModels.filter(retained),...forged.items.map(m=>({...m,source:'forged',stone:'Металл',collection:'forged',variants:[{id:m.id,specs:m.specs,price:null,image:m.image}]}))];
+const legacyProducts=[...ownMonuments,...userModels,...referenceModels];
+function withLegacyNames(item){
+ const oldNames=legacyProducts.filter(old=>old.id!==item.id&&canonicalId(old.id)===item.id).map(old=>old.name);
+ return {...item,name:item.id==='ermis-60'?'Цефея':item.name,searchAliases:[...new Set([item.name,...oldNames])]};
+}
+const remaining=items=>items.filter(retained).map(withLegacyNames);
+const ermisModels=ermis.models.map(withLegacyNames).sort((a,b)=>Number(b.id==='ermis-2')-Number(a.id==='ermis-2'));
+export const monumentModels=[...ermisModels.filter(m=>m.category==='monuments'),...remaining(ownMonuments),...remaining(userModels),...remaining(referenceModels.filter(m=>m.category==='monuments'))];
+export const allProducts=[...ermisModels,pavingFamily,...remaining(userModels),...paving,...remaining(ownMonuments),...remaining(referenceModels),...forged.items.map(m=>({...m,source:'forged',stone:'Металл',collection:'forged',variants:[{id:m.id,specs:m.specs,price:null,image:m.image}]}))];
 export const catalogCoverage=extended.coverage;
 export const collectionLabels={standard:'Стандартные',econom:'Эконом',elite:'Элитные',forged:'Кованые'};
 export const rub=value=>value==null?'По запросу':`от ${new Intl.NumberFormat('ru-RU').format(value)} ₽`;

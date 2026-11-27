@@ -17,8 +17,8 @@ for(const m of catalog.models){
  assert(m.materialOptions.some(p=>p.id===m.defaultMaterial));
  for(const p of m.materialOptions){assert(p.native);for(const asset of [p.texture,p.previewImage]){const bytes=fs.readFileSync('public/'+asset);assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP')}}
 }
-const bundle=await build({stdin:{contents:"export * from './src/catalog-data.js';",resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'esm',define:{'import.meta.env.BASE_URL':'"/"'}});
-const {allProducts,catalogProducts,monumentModels,findModel,findProduct}=await import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'));
+const bundle=await build({stdin:{contents:"export * from './src/catalog-data.js';export {materialsFor,materialIdFor} from './src/product-materials.js';export {monumentMaterials} from './src/materials.js';",resolveDir:process.cwd()},bundle:true,write:false,platform:'node',format:'esm',define:{'import.meta.env.BASE_URL':'"/"'}});
+const {allProducts,catalogProducts,monumentModels,findModel,findProduct,materialsFor,materialIdFor,monumentMaterials}=await import('data:text/javascript;base64,'+Buffer.from(bundle.outputFiles[0].text).toString('base64'));
 assert.equal(new Set(allProducts.map(m=>m.id)).size,allProducts.length);
 for(const [oldId] of Object.entries(replacements.aliases)){
  assert(!catalogProducts.some(m=>m.id===oldId),'duplicate card remains '+oldId);
@@ -28,3 +28,19 @@ for(const [oldId] of Object.entries(replacements.aliases)){
 for(const m of monumentModels)assert.equal(findModel(m.id).id,m.id);
 assert.equal(catalogProducts.filter(m=>m.pavingType).length,1,'one paving selector');
 console.log(`PASS: all 753 source entries accounted for; 706 unique images, 47 exact source duplicates consolidated; ${catalog.models.length} imported cards; ${Object.keys(replacements.aliases).length} old cards consolidated; ${monumentModels.length} visible monument forms; legacy links resolve.`);
+
+for(const model of monumentModels){
+ const options=materialsFor(model);
+ assert.equal(new Set(options.map(m=>m.id)).size,options.length,'unique choices '+model.id);
+ for(const stone of monumentMaterials){const id=materialIdFor(model,stone.id);assert(options.some(m=>m.id===id),'missing '+stone.id+' on '+model.id);assert(id===stone.id||({gabbro:'ermis-k06',red:'ermis-k05',gray:'ermis-k03','tan-brown':'ermis-k12'})[stone.id]===id,'must not silently reset '+stone.id+' on '+model.id);}
+ for(const id of ['marble-cream','marble-gray','shanxi','diamond','tulun'])assert(options.some(m=>m.id===id),'original workshop stone '+id+' on '+model.id);
+}
+console.log('PASS: all nine workshop stones remain selectable on every monument; matching native photos are preferred; restored stones retain their IDs for URLs and saved projects.');
+
+assert.equal(findModel('arkado-3908').name,'Цефея');
+assert.equal(catalogProducts.filter(m=>[m.name,...(m.searchAliases||[])].some(name=>name.toLowerCase().includes('цефея'))).length,1,'one searchable Cephée card');
+for(const [oldId] of Object.entries(replacements.aliases)){
+ const legacy=[...read('src/current-catalog.json'),...read('src/user-catalog.json'),...read('src/extended-catalog.json').models].find(m=>m.id===oldId);
+ const target=findProduct(oldId);assert(target.searchAliases.includes(legacy.name),'legacy name searchable: '+legacy.name);
+}
+console.log('PASS: Цефея has its familiar display name; all 124 consolidated product names remain searchable without duplicate cards.');
