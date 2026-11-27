@@ -6,7 +6,7 @@ import TriplexInfo from './TriplexInfo';
 import {ContactButton,ContactProvider} from './ContactOptions';
 import useReveal from './useReveal';
 import UnifiedCatalog,{UnifiedProductPage} from './UnifiedCatalog';
-import {allProducts} from './catalog-data';
+import {findProduct} from './catalog-data';
 import Materials from './MaterialsPage';
 import {productCategories} from './ProductCatalog';
 import Icon from './Icon';
@@ -28,7 +28,7 @@ function App(){
  const isCatalog=page==='catalog'||categoryPages.includes(page),isBuilder=page==='builder',isProduct=page==='product',isMaterials=page==='materials',isHome=!isCatalog&&!isBuilder&&!isProduct&&!isMaterials;
  const requestedCategory=new URLSearchParams(location.search).get('category')||'all';
  const category=categoryPages.includes(page)?page:(Object.hasOwn(productCategories,requestedCategory)?requestedCategory:'all');
- const product=allProducts.find(x=>x.id===new URLSearchParams(location.search).get('item'));
+ const product=findProduct(new URLSearchParams(location.search).get('item'));
  useReveal([page],!isCatalog&&!isProduct&&!isMaterials);
  useEffect(()=>{document.title=`${isMaterials?'Материалы и оттенки':isProduct?(product?.name||'Изделие'):isCatalog?(category==='all'?'Каталог изделий':productCategories[category]):isBuilder?'Конструктор памятника':'Памятники и благоустройство'} — ИСТОК`},[isCatalog,isBuilder,isProduct,isMaterials,category,product]);
  useEffect(()=>{if(photo===null)return;function key(e){if(e.key==='ArrowRight')setPhoto(p=>(p+1)%8);if(e.key==='ArrowLeft')setPhoto(p=>(p+7)%8)}document.addEventListener('keydown',key);return()=>document.removeEventListener('keydown',key)},[photo]);

@@ -8,7 +8,7 @@ const result=await build({stdin:{contents:entry,resolveDir:process.cwd()},bundle
 const test=`(async()=>{
  const {renderStoneMaterial,monumentModels,monumentMaterials}=window.audit;
  const images=new Map(),load=src=>{if(!images.has(src))images.set(src,new Promise((r,j)=>{const i=new Image();i.onload=()=>r(i);i.onerror=j;i.src=${JSON.stringify(base)}+src}));return images.get(src)};
- const ids=${JSON.stringify(reviewIds)},models=ids.length?monumentModels.filter(m=>ids.includes(m.id)):monumentModels;
+ const ids=${JSON.stringify(reviewIds)},models=ids.length?monumentModels.filter(m=>ids.includes(m.id)&&!m.materialOptions):monumentModels.filter(m=>!m.materialOptions);
  let checked=0;const records=[];
  for(const model of models){for(const variant of (ids.length?[model.variants[0]]:model.variants)){
   const original=await load(variant.previewImage||model.previewImage||variant.image||model.image),size=${size},pad=${Math.round(size/12)};

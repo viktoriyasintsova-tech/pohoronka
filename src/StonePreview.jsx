@@ -1,6 +1,7 @@
 import React,{forwardRef,useEffect,useImperativeHandle,useRef,useState} from 'react';
 import {asset} from './catalog-data';
 import Icon from './Icon';
+import {prepareNativePreview} from './native-preview';
 import {renderStoneMaterial} from './stone-texture';
 const imageCache=new Map();
 function loadImage(src){
@@ -19,11 +20,11 @@ function wrappedText(ctx,text,x,y,maxWidth,lineHeight){
 export default forwardRef(function StonePreview({model,variant,material,config={},tools=false},ref){
  const canvasRef=useRef(null),dialogRef=useRef(null),readyRef=useRef(false),savedOverflow=useRef(null);const [state,setState]=useState('loading'),[snapshot,setSnapshot]=useState('');
  const dimensionsKey=(variant?.dimensions||[]).join('x');
- const src=asset(variant?.previewImage||model.previewImage||variant?.image||model.image);
+ const src=asset(material?.native?material.previewImage:variant?.previewImage||model.previewImage||variant?.image||model.image);
  useImperativeHandle(ref,()=>({enlarge(){if(!readyRef.current)return false;enlarge();return true},download(){const canvas=canvasRef.current;if(!canvas||!readyRef.current)return false;const a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download='istok-'+model.id+'.png';a.click();return true}}),[model.id]);
  useEffect(()=>{let cancelled=false;readyRef.current=false;setState('loading');
  async function paint(){try{
-  const original=await loadImage(src);if(cancelled)return;
+  const loaded=await loadImage(src);if(cancelled)return;const original=model.source==='ermis'?prepareNativePreview(loaded):loaded;
   const size=900,canvas=canvasRef.current,ctx=canvas.getContext('2d');canvas.width=size;canvas.height=size;
   const surface=document.createElement('canvas');surface.width=size;surface.height=size;const c=surface.getContext('2d',{willReadFrequently:true});
   const pad=70,available=size-pad*2,aspect=variant?.previewIsolated&&variant.dimensions?.length>1?variant.dimensions[1]/variant.dimensions[0]:original.width/original.height;
@@ -35,7 +36,7 @@ export default forwardRef(function StonePreview({model,variant,material,config={
    const low=Math.min(d[i],d[i+1],d[i+2]),high=Math.max(d[i],d[i+1],d[i+2]);
    if(model.source==='price'&&low>243&&high-low<12)d[i+3]=0;
   }
-  if(material){
+  if(material&&!material.native){
    const image=await loadImage(asset(material.texture));if(cancelled)return;
    c.putImageData(pixels,0,0);
    renderStoneMaterial({surface,image,material,model,variant,placement:{x:(size-w)/2,y:(size-h)/2,w,h}});

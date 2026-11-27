@@ -15,5 +15,8 @@ export const stoneMaterials=[
 ];
 // The same independent, evenly lit texture is used in swatches and the renderer.
 for(const material of stoneMaterials)material.texture=`assets/materials/textures/${material.id}.jpg`;
-export const materialSampleStyle=material=>({backgroundImage:`url('${import.meta.env.BASE_URL}${material.texture}')`,backgroundSize:'cover',backgroundPosition:'center',backgroundRepeat:'no-repeat'});
+export function materialSampleStyle(material){
+ const size=material.sampleSize||(material.native?'900%':'cover'),position=material.samplePosition||'center';
+ return {backgroundImage:`${material.sampleSplit?'linear-gradient(90deg,transparent 62%,#151515 62%),':''}url('${import.meta.env.BASE_URL}${material.texture}')`,backgroundSize:material.sampleSplit?`100%, ${size}`:size,backgroundPosition:material.sampleSplit?`center, ${position}`:position,backgroundRepeat:'no-repeat'};
+}
 export const monumentMaterials=stoneMaterials.filter(x=>x.uses.includes('monument'));
